@@ -3,91 +3,107 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aayush Adhikari | DevOps Engineer</title>
+  <title>Aayush Adhikari | DevOps Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
-  <header>
+  <header id="home">
     <div class="container">
-      <h1>Aayush Adhikari</h1>
+      <img src="profile.jpg" alt="Aayush" class="profile" />
+      <h1>Hi, I'm Aayush</h1>
       <p>DevOps Engineer | AWS Certified | Python Enthusiast</p>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <a href="#contact" class="btn">Contact Me</a>
     </div>
   </header>
 
-  <section id="about" class="container">
-    <h2>About Me</h2>
-    <p>
-      Hi, I’m Aayush — a DevOps Engineer based in Kathmandu, Nepal. I specialize in cloud architecture, automation, and scalable deployments. Currently in the final semester of my BCA at Reliance College.
-    </p>
-    <p>
-      I’ve worked with hospitals and IT service firms, implementing cloud-based solutions and CI/CD pipelines using tools like Jenkins, Docker, Terraform, and Kubernetes.
-    </p>
-  </section>
-
-  <section id="skills" class="container">
-    <h2>Skills</h2>
-    <div class="grid">
-      <div>🛠 AWS, EC2, S3, VPC, RDS</div>
-      <div>⚙️ Terraform, Jenkins, GitHub Actions</div>
-      <div>🐳 Docker & Kubernetes</div>
-      <div>📜 Python, Bash</div>
-      <div>🖥 Linux, NGINX</div>
-      <div>🗄 SQL (PostgreSQL), MongoDB</div>
+  <section id="about" class="section" data-aos="fade-up">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I’m a DevOps Engineer based in Nepal, skilled in cloud architecture, infrastructure as code, and CI/CD automation using AWS, Docker, Kubernetes, Jenkins, and Terraform. I'm currently in my final BCA semester.</p>
     </div>
   </section>
 
-  <section id="projects" class="container">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="project">
-        <h3>Wanderlust</h3>
-        <p>CI/CD-enabled MERN stack web app using Jenkins, Docker, K8s, Terraform, NGINX on AWS EC2.</p>
-        <a href="https://github.com/Aayush786-21/mern-deployment.git" target="_blank">GitHub ↗</a>
+  <section id="skills" class="section" data-aos="fade-up">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skill">
+        <label>AWS / EC2 / VPC</label>
+        <div class="bar"><div style="width: 90%"></div></div>
       </div>
-      <div class="project">
-        <h3>QRDANCE</h3>
-        <p>QR-based attendance system for secure and fast student check-ins.</p>
-        <a href="https://github.com/Aayush786-21/damn_project.git" target="_blank">GitHub ↗</a>
+      <div class="skill">
+        <label>Terraform / GitHub Actions</label>
+        <div class="bar"><div style="width: 85%"></div></div>
       </div>
-      <div class="project">
-        <h3>GoogleSheet Task Processor</h3>
-        <p>Python tool that processes and updates Google Sheets with automation logic.</p>
-        <a href="https://github.com/Aayush786-21/spreadsheet_connectivity" target="_blank">GitHub ↗</a>
+      <div class="skill">
+        <label>Docker / Kubernetes</label>
+        <div class="bar"><div style="width: 80%"></div></div>
       </div>
-      <div class="project">
-        <h3>Leo Downloader</h3>
-        <p>Python GUI app for downloading YouTube videos with ease (PyQt5).</p>
-        <a href="https://github.com/Aayush786-21/leo_downloader" target="_blank">GitHub ↗</a>
-      </div>
-      <div class="project">
-        <h3>Chatbot Deployment</h3>
-        <p>CI/CD-deployed chatbot with Docker & Kubernetes for scalability.</p>
-        <a href="https://github.com/Aayush786-21/chatbot-deploy.git" target="_blank">GitHub ↗</a>
-      </div>
-      <div class="project">
-        <h3>Netflix Clone (Deployment)</h3>
-        <p>Ongoing CI/CD project deploying a Netflix clone using modern DevOps tools.</p>
-        <a href="https://github.com/Aayush786-21/netflix-.git" target="_blank">GitHub ↗</a>
+      <div class="skill">
+        <label>Python / Bash / Linux</label>
+        <div class="bar"><div style="width: 90%"></div></div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="container">
-    <h2>Contact</h2>
-    <p>📧 <a href="mailto:aayushadhikari786@gmail.com">aayushadhikari786@gmail.com</a></p>
-    <p>📞 +977-9849832727</p>
-    <p>📍 Boudha-6, Ramhiti, Kathmandu</p>
-    <p>🔗 <a href="https://www.linkedin.com/in/aayush-adhikari-2281082b8/" target="_blank">LinkedIn</a></p>
+  <section id="services" class="section" data-aos="fade-up">
+    <div class="container">
+      <h2>Services</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Cloud Architecture</h3>
+          <p>Design and deploy scalable infrastructure on AWS.</p>
+        </div>
+        <div class="card">
+          <h3>CI/CD Automation</h3>
+          <p>Streamline delivery with Jenkins, Docker, and GitHub Actions.</p>
+        </div>
+        <div class="card">
+          <h3>IT Support</h3>
+          <p>Linux system management and network troubleshooting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section" data-aos="fade-up">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Wanderlust</h3>
+          <p>CI/CD deployed MERN app using Docker, Jenkins, K8s.</p>
+          <a href="https://github.com/Aayush786-21/mern-deployment.git" target="_blank">GitHub ↗</a>
+        </div>
+        <div class="card">
+          <h3>QRDANCE</h3>
+          <p>QR-based student attendance system.</p>
+          <a href="https://github.com/Aayush786-21/damn_project.git" target="_blank">GitHub ↗</a>
+        </div>
+        <div class="card">
+          <h3>Sheet Task Processor</h3>
+          <p>Python app to automate Google Sheet workflows.</p>
+          <a href="https://github.com/Aayush786-21/spreadsheet_connectivity" target="_blank">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section" data-aos="fade-up">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Your email" required />
+        <textarea name="message" placeholder="Your message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Aayush Adhikari</p>
+    <p>© 2025 Aayush Adhikari • Built with ❤</p>
   </footer>
 
   <script src="script.js"></script>
