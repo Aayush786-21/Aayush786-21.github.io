@@ -1,234 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aayush Adhikari | Cloud & DevOps Engineer</title>
-  <!-- Unicons (for icons) -->
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-  <!-- Swiper CSS (for carousels, if needed) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aayush Adhikari | DevOps Engineer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!--==================== HEADER ====================-->
-  <header class="header" id="header">
-    <nav class="nav container">
-      <a href="#home" class="nav__logo">AAYUSH ADHIKARI</a>
-      <div class="nav__menu">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-          <li class="nav__item"><a href="#portfolio" class="nav__link">Projects</a></li>
-          <li class="nav__item"><a href="#qualification" class="nav__link">Experience</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-        </ul>
-        <div class="nav__social">
-          <a href="https://linkedin.com/in/your-linkedin" target="_blank" class="nav__icon"><i class="uil uil-linkedin"></i></a>
-          <a href="https://github.com/your-github" target="_blank" class="nav__icon"><i class="uil uil-github"></i></a>
-        </div>
-      </div>
-    </nav>
+  <header>
+    <div class="container">
+      <h1>Aayush Adhikari</h1>
+      <p>DevOps Engineer | AWS Certified | Python Enthusiast</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <!--==================== MAIN ====================-->
-  <main class="main">
-    <!--==================== HOME ====================-->
-    <section class="home section" id="home">
-      <div class="home__container container grid">
-        <div class="home__content">
-          <h1 class="home__title">Aayush Adhikari</h1>
-          <h2 class="home__subtitle">Cloud & DevOps Engineer</h2>
-          <p class="home__description">I build and maintain scalable, automated infrastructure. Bridging the gap between IT operations and modern cloud solutions with expertise in AWS, CI/CD, and containerization.</p>
-          <div class="home__buttons">
-            <a href="#portfolio" class="button">View My Projects</a>
-            <a href="#contact" class="button button--secondary">Get In Touch</a>
-          </div>
-        </div>
-      </div>
-    </section>
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>
+      Hi, I’m Aayush — a DevOps Engineer based in Kathmandu, Nepal. I specialize in cloud architecture, automation, and scalable deployments. Currently in the final semester of my BCA at Reliance College.
+    </p>
+    <p>
+      I’ve worked with hospitals and IT service firms, implementing cloud-based solutions and CI/CD pipelines using tools like Jenkins, Docker, Terraform, and Kubernetes.
+    </p>
+  </section>
 
-    <!--==================== ABOUT ====================-->
-    <section class="about section" id="about">
-      <h2 class="section__title">About Me</h2>
-      <div class="about__container container grid">
-        <img src="profile.jpg" alt="Aayush Adhikari" class="about__img">
-        <div class="about__data">
-          <p>I am a final-year Computer Application student with a passion for building robust and efficient systems. My journey began with hands-on IT support, where I managed networks and provided critical technical assistance at Nepal Medical College and for diverse clients.</p>
-          <p>This foundation in system administration sparked my interest in automation and scalability, leading me to specialize in Cloud Computing (AWS) and DevOps methodologies. I am proficient in creating automated CI/CD pipelines, managing infrastructure as code with Terraform, and orchestrating applications with Docker and Kubernetes.</p>
-          <p>I thrive on solving complex problems and am eager to apply my skills to create resilient, high-performing cloud infrastructure in a challenging and growth-oriented role.</p>
-        </div>
-      </div>
-    </section>
-
-    <!--==================== SKILLS ====================-->
-    <section class="skills section" id="skills">
-      <h2 class="section__title">Technical Skills</h2>
-      <div class="skills__container container grid">
-        <div class="skills__content">
-          <h3 class="skills__title">☁️ Cloud & AWS</h3>
-          <ul class="skills__list">
-            <li>AWS Certified Solutions Architect - Associate</li>
-            <li>EC2, S3, IAM, VPC, RDS, Lambda</li>
-            <li>Cloud Architecture</li>
-            <li>Cloud Troubleshooting</li>
-          </ul>
-        </div>
-        <div class="skills__content">
-          <h3 class="skills__title">⚙️ DevOps & Automation</h3>
-          <ul class="skills__list">
-            <li>CI/CD, Jenkins, GitHub Actions</li>
-            <li>Infrastructure as Code (IaC), Terraform, Ansible</li>
-            <li>Python Scripting</li>
-          </ul>
-        </div>
-        <div class="skills__content">
-          <h3 class="skills__title">📦 Containers & Orchestration</h3>
-          <ul class="skills__list">
-            <li>Docker, Kubernetes (K8s)</li>
-            <li>Containerization</li>
-          </ul>
-        </div>
-        <div class="skills__content">
-          <h3 class="skills__title">💻 Core Technologies & Proficiencies</h3>
-          <ul class="skills__list">
-            <li>Python, Linux, NGINX</li>
-            <li>SQL (PostgreSQL), MongoDB</li>
-            <li>System Troubleshooting</li>
-            <li>Network Diagnostics, IT Support</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!--==================== QUALIFICATION ====================-->
-    <section class="qualification section" id="qualification">
-      <h2 class="section__title">Professional Experience</h2>
-      <div class="qualification__container container">
-        <div class="qualification__timeline">
-          <div class="qualification__item">
-            <h3 class="qualification__title">IT Support Specialist | Nepal Medical College</h3>
-            <span class="qualification__subtitle">Aarubari, KTM | 2023 - 2024</span>
-            <ul>
-              <li>Managed and maintained a network of over 200 computers, ensuring operational uptime for critical medical college functions.</li>
-              <li>Troubleshot complex hardware, software, and network connectivity issues, minimizing downtime.</li>
-              <li>Implemented preventative maintenance schedules to proactively address potential system failures.</li>
-              <li><strong>Achievement:</strong> Received special recognition from the principal, Dr. Promod Kumar Chhetri, for exceptional contributions and performance as a Computer Operator.</li>
-            </ul>
-          </div>
-          <div class="qualification__item">
-            <h3 class="qualification__title">On-Site Technical Support | Sagar Computer</h3>
-            <span class="qualification__subtitle">Boudha, KTM | 2020 - 2023</span>
-            <ul>
-              <li>Provided comprehensive on-site technical support for hardware and software issues across a diverse client base.</li>
-              <li>Specialized in Windows OS troubleshooting, network problem resolution, and CCTV system maintenance.</li>
-              <li><strong>Achievement:</strong> Successfully led data recovery projects, including restoring critical data from a failed hard disk for the accounting section at Hotel Tibet International, saving the client significant time and resources.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--==================== CERTIFICATIONS ====================-->
-    <section class="services section" id="services">
-      <h2 class="section__title">Certifications</h2>
-      <div class="services__container container">
-        <div class="services__content">
-          <img src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Solutions-Architect-Associate_badge.634f8a21af2e0e95687587a7107F4f7461956e22.png" alt="AWS Certified Solutions Architect – Associate" class="services__img">
-          <div>
-            <h3 class="services__title">AWS Certified Solutions Architect – Associate</h3>
-            <p class="services__subtitle">Issued by Amazon Web Services (AWS)</p>
-            <a href="https://www.certmetrics.com/amazon/public/transcript.aspx?transcript=YOUR_ID" target="_blank" class="button">Verify Credential</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--==================== PORTFOLIO ====================-->
-    <section class="portfolio section" id="portfolio">
-      <h2 class="section__title">Projects</h2>
-      <div class="portfolio__container container grid">
-        <div class="portfolio__content">
-          <h3 class="portfolio__title">Wanderlust (MERN Stack Deployment)</h3>
-          <p class="portfolio__description">A full CI/CD-enabled MERN stack web application. Designed and deployed using multiple deployment strategies to ensure high availability and scalability.</p>
-          <p class="portfolio__stack">Tech Stack: MERN, CI/CD, Jenkins, GitHub Actions, Docker, Kubernetes, Terraform, NGINX, AWS EC2</p>
-          <a href="#" class="portfolio__icon"><i class="uil uil-github"></i> GitHub Repo</a>
-          <a href="#" class="portfolio__icon"><i class="uil uil-external-link-alt"></i> Live Demo</a>
-        </div>
-        <div class="portfolio__content">
-          <h3 class="portfolio__title">Netflix-Clone (CI/CD Deployment) - In Progress</h3>
-          <p class="portfolio__description">A CI/CD-focused deployment project for a Netflix-clone application, focusing on reliable and scalable deployment through automation and orchestration.</p>
-          <p class="portfolio__stack">Tech Stack: Jenkins, Docker, Kubernetes, CI/CD</p>
-          <a href="#" class="portfolio__icon"><i class="uil uil-github"></i> GitHub Repo</a>
-        </div>
-        <div class="portfolio__content">
-          <h3 class="portfolio__title">Chatbot Deployment</h3>
-          <p class="portfolio__description">A CI/CD-focused project to automate the deployment of a chatbot application, ensuring reliability and scalability using modern DevOps tools.</p>
-          <p class="portfolio__stack">Tech Stack: CI/CD, Jenkins, Docker, Kubernetes</p>
-          <a href="#" class="portfolio__icon"><i class="uil uil-github"></i> GitHub Repo</a>
-        </div>
-        <div class="portfolio__content">
-          <h3 class="portfolio__title">QRDANCE</h3>
-          <p class="portfolio__description">A QR-based attendance system built for easy student check-ins. Generates and scans unique QR codes to track presence in a secure and streamlined way.</p>
-          <p class="portfolio__stack">Tech Stack: Python, Flask, QR-lib</p>
-          <a href="#" class="portfolio__icon"><i class="uil uil-github"></i> GitHub Repo</a>
-        </div>
-        <div class="portfolio__content">
-          <h3 class="portfolio__title">GoogleSheet Task Processor</h3>
-          <p class="portfolio__description">A Python automation tool that reads data from a Google Sheet, performs calculations, and updates the sheet with computed results. Designed to simplify repetitive spreadsheet tasks.</p>
-          <p class="portfolio__stack">Tech Stack: Python, Google Sheets API</p>
-          <a href="#" class="portfolio__icon"><i class="uil uil-github"></i> GitHub Repo</a>
-        </div>
-        <div class="portfolio__content">
-          <h3 class="portfolio__title">Leo Downloader</h3>
-          <p class="portfolio__description">A YouTube video downloader application built with a user-friendly GUI, allowing users to download videos by simply entering the URL.</p>
-          <p class="portfolio__stack">Tech Stack: Python, PyQt5</p>
-          <a href="#" class="portfolio__icon"><i class="uil uil-github"></i> GitHub Repo</a>
-        </div>
-      </div>
-    </section>
-
-    <!--==================== PROJECT IN MIND ====================-->
-    <section class="project section">
-      <!-- You can use this section for a call-to-action or highlight a special project -->
-    </section>
-
-    <!--==================== TESTIMONIAL ====================-->
-    <section class="testimonial section">
-      <!-- You can add testimonials here in the future -->
-    </section>
-
-    <!--==================== CONTACT ME ====================-->
-    <section class="contact section" id="contact">
-      <h2 class="section__title">Get In Touch</h2>
-      <div class="contact__container container">
-        <p>I'm currently seeking new opportunities and would love to hear from you. Whether you have a question or just want to connect, feel free to reach out!</p>
-        <a href="mailto:aayushadhikari786@gmail.com" class="contact__email">aayushadhikari786@gmail.com</a>
-        <div class="contact__icons">
-          <a href="https://linkedin.com/in/your-linkedin" target="_blank"><i class="uil uil-linkedin"></i></a>
-          <a href="https://github.com/your-github" target="_blank"><i class="uil uil-github"></i></a>
-        </div>
-        <div class="contact__info">
-          <span>Boudha-6, Ramhiti | +977-9849832727</span>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!--==================== FOOTER ====================-->
-  <footer class="footer">
-    <div class="footer__container container">
-      <span>© 2024 Aayush Adhikari. Built with <span style="color: #e25555;">&#10084;&#65039;</span> and code.</span>
+  <section id="skills" class="container">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div>🛠 AWS, EC2, S3, VPC, RDS</div>
+      <div>⚙️ Terraform, Jenkins, GitHub Actions</div>
+      <div>🐳 Docker & Kubernetes</div>
+      <div>📜 Python, Bash</div>
+      <div>🖥 Linux, NGINX</div>
+      <div>🗄 SQL (PostgreSQL), MongoDB</div>
     </div>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Wanderlust</h3>
+        <p>CI/CD-enabled MERN stack web app using Jenkins, Docker, K8s, Terraform, NGINX on AWS EC2.</p>
+        <a href="https://github.com/Aayush786-21/mern-deployment.git" target="_blank">GitHub ↗</a>
+      </div>
+      <div class="project">
+        <h3>QRDANCE</h3>
+        <p>QR-based attendance system for secure and fast student check-ins.</p>
+        <a href="https://github.com/Aayush786-21/damn_project.git" target="_blank">GitHub ↗</a>
+      </div>
+      <div class="project">
+        <h3>GoogleSheet Task Processor</h3>
+        <p>Python tool that processes and updates Google Sheets with automation logic.</p>
+        <a href="https://github.com/Aayush786-21/spreadsheet_connectivity" target="_blank">GitHub ↗</a>
+      </div>
+      <div class="project">
+        <h3>Leo Downloader</h3>
+        <p>Python GUI app for downloading YouTube videos with ease (PyQt5).</p>
+        <a href="https://github.com/Aayush786-21/leo_downloader" target="_blank">GitHub ↗</a>
+      </div>
+      <div class="project">
+        <h3>Chatbot Deployment</h3>
+        <p>CI/CD-deployed chatbot with Docker & Kubernetes for scalability.</p>
+        <a href="https://github.com/Aayush786-21/chatbot-deploy.git" target="_blank">GitHub ↗</a>
+      </div>
+      <div class="project">
+        <h3>Netflix Clone (Deployment)</h3>
+        <p>Ongoing CI/CD project deploying a Netflix clone using modern DevOps tools.</p>
+        <a href="https://github.com/Aayush786-21/netflix-.git" target="_blank">GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <p>📧 <a href="mailto:aayushadhikari786@gmail.com">aayushadhikari786@gmail.com</a></p>
+    <p>📞 +977-9849832727</p>
+    <p>📍 Boudha-6, Ramhiti, Kathmandu</p>
+    <p>🔗 <a href="https://www.linkedin.com/in/aayush-adhikari-2281082b8/" target="_blank">LinkedIn</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Aayush Adhikari</p>
   </footer>
 
-  <!--==================== SWIPER JS ====================-->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <!--==================== MAIN JS ====================-->
   <script src="script.js"></script>
 </body>
-</html> 
+</html>
