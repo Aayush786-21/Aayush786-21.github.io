@@ -169,3 +169,33 @@ footer {
     font-size: 1.2rem;
   }
 }
+
+.profile-pic-zoom {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(80, 72, 229, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.profile-pic-zoom img.profile {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  transform: scale(1.18);
+}
+header h1 {
+  font-size: 2.2rem;
+  color: #222;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+header p {
+  margin-top: 0.2rem;
+  margin-bottom: 1.5rem;
+}

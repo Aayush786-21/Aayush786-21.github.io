@@ -11,14 +11,16 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
-  <header id="home">
-    <div class="container" style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
-      <div class="profile-pic-zoom">
+  <header id="home" style="background: linear-gradient(120deg, #a18cd1 0%, #fbc2eb 100%);padding:0;">
+    <div class="hero-flex container">
+      <div class="hero-img-frame">
         <img src="image.png" alt="Aayush" class="profile" />
       </div>
-      <h1 style="margin-top:24px;">Aayush Adhikari</h1>
-      <p style="font-size:1.2rem;color:#4f46e5;margin-bottom:24px;">Cloud & DevOps Engineer</p>
-      <a href="#contact" class="btn">Contact Me</a>
+      <div class="hero-content">
+        <h1>Aayush Adhikari</h1>
+        <p class="hero-title">Cloud & DevOps Engineer</p>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
     </div>
   </header>
 
@@ -26,9 +28,7 @@
     <section class="section" id="about">
       <h2>About Me</h2>
       <div class="card" style="max-width:700px;margin:0 auto;">
-        <p>I am a final-year Computer Application student with a passion for building robust and efficient systems. My journey began with hands-on IT support, where I managed networks and provided critical technical assistance at Nepal Medical College and for diverse clients.</p>
-        <p>This foundation in system administration sparked my interest in automation and scalability, leading me to specialize in Cloud Computing (AWS) and DevOps methodologies. I am proficient in creating automated CI/CD pipelines, managing infrastructure as code with Terraform, and orchestrating applications with Docker and Kubernetes.</p>
-        <p>I thrive on solving complex problems and am eager to apply my skills to create resilient, high-performing cloud infrastructure in a challenging and growth-oriented role.</p>
+        <p>Cloud and DevOps engineer passionate about automation, scalable systems, and delivering reliable solutions. AWS Certified. I love building, optimizing, and securing cloud infrastructure.</p>
       </div>
     </section>
 
@@ -38,24 +38,21 @@
         <div class="card">
           <h3>Cloud & AWS</h3>
           <div class="skill"><label>AWS Solutions Architect</label><div class="bar"><div style="width:95%"></div></div></div>
-          <div class="skill"><label>EC2, S3, IAM, VPC, RDS, Lambda</label><div class="bar"><div style="width:90%"></div></div></div>
-          <div class="skill"><label>Cloud Architecture</label><div class="bar"><div style="width:85%"></div></div></div>
+          <div class="skill"><label>EC2, S3, IAM, VPC</label><div class="bar"><div style="width:90%"></div></div></div>
         </div>
         <div class="card">
           <h3>DevOps & Automation</h3>
           <div class="skill"><label>CI/CD, Jenkins, GitHub Actions</label><div class="bar"><div style="width:90%"></div></div></div>
           <div class="skill"><label>Terraform, Ansible</label><div class="bar"><div style="width:85%"></div></div></div>
-          <div class="skill"><label>Python Scripting</label><div class="bar"><div style="width:80%"></div></div></div>
         </div>
         <div class="card">
-          <h3>Containers & Orchestration</h3>
+          <h3>Containers</h3>
           <div class="skill"><label>Docker, Kubernetes</label><div class="bar"><div style="width:85%"></div></div></div>
         </div>
         <div class="card">
-          <h3>Core Technologies</h3>
-          <div class="skill"><label>Python, Linux, NGINX</label><div class="bar"><div style="width:90%"></div></div></div>
+          <h3>Core Tech</h3>
+          <div class="skill"><label>Python, Linux</label><div class="bar"><div style="width:90%"></div></div></div>
           <div class="skill"><label>SQL, MongoDB</label><div class="bar"><div style="width:80%"></div></div></div>
-          <div class="skill"><label>IT Support, Networking</label><div class="bar"><div style="width:85%"></div></div></div>
         </div>
       </div>
     </section>
@@ -65,8 +62,8 @@
       <div class="card" style="max-width:500px;margin:0 auto;text-align:center;">
         <img src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Solutions-Architect-Associate_badge.634f8a21af2e0e95687587a7107F4f7461956e22.png" alt="AWS Certified Solutions Architect – Associate" style="width:100px;margin-bottom:10px;">
         <h3 style="margin:10px 0 5px 0;">AWS Certified Solutions Architect – Associate</h3>
-        <p>Issued by Amazon Web Services (AWS)</p>
-        <a href="https://www.certmetrics.com/amazon/public/transcript.aspx?transcript=YOUR_ID" target="_blank" class="btn">Verify Credential</a>
+        <p>Issued by AWS</p>
+        <a href="https://www.certmetrics.com/amazon/public/transcript.aspx?transcript=YOUR_ID" target="_blank" class="btn">Verify</a>
       </div>
     </section>
 
@@ -74,73 +71,63 @@
       <h2>Projects</h2>
       <div class="cards">
         <div class="card">
-          <h3>Wanderlust (MERN Stack Deployment)</h3>
-          <p>A full CI/CD-enabled MERN stack web application. Designed and deployed using multiple deployment strategies to ensure high availability and scalability.</p>
-          <p><b>Tech Stack:</b> MERN, CI/CD, Jenkins, GitHub Actions, Docker, Kubernetes, Terraform, NGINX, AWS EC2</p>
-          <a href="#" target="_blank">GitHub Repo</a> | <a href="#" target="_blank">Live Demo</a>
+          <h3>Wanderlust</h3>
+          <p>MERN stack app with CI/CD, Docker, K8s, AWS. Highly available, scalable, and automated.</p>
+          <a href="#" target="_blank">GitHub</a> 
         </div>
         <div class="card">
-          <h3>Netflix-Clone (CI/CD Deployment) - In Progress</h3>
-          <p>A CI/CD-focused deployment project for a Netflix-clone application, focusing on reliable and scalable deployment through automation and orchestration.</p>
-          <p><b>Tech Stack:</b> Jenkins, Docker, Kubernetes, CI/CD</p>
-          <a href="#" target="_blank">GitHub Repo</a>
+          <h3>Netflix-Clone</h3>
+          <p>Automated deployment for a Netflix-like app. CI/CD, Docker, K8s. (In Progress)</p>
+          <a href="#" target="_blank">GitHub</a>
         </div>
         <div class="card">
           <h3>Chatbot Deployment</h3>
-          <p>A CI/CD-focused project to automate the deployment of a chatbot application, ensuring reliability and scalability using modern DevOps tools.</p>
-          <p><b>Tech Stack:</b> CI/CD, Jenkins, Docker, Kubernetes</p>
-          <a href="#" target="_blank">GitHub Repo</a>
+          <p>Automated chatbot deployment using modern DevOps tools. Reliable and scalable.</p>
+          <a href="#" target="_blank">GitHub</a>
         </div>
         <div class="card">
           <h3>QRDANCE</h3>
-          <p>A QR-based attendance system built for easy student check-ins. Generates and scans unique QR codes to track presence in a secure and streamlined way.</p>
-          <p><b>Tech Stack:</b> Python, Flask, QR-lib</p>
-          <a href="#" target="_blank">GitHub Repo</a>
+          <p>QR-based attendance system for easy, secure check-ins.</p>
+          <a href="#" target="_blank">GitHub</a>
         </div>
         <div class="card">
           <h3>GoogleSheet Task Processor</h3>
-          <p>A Python automation tool that reads data from a Google Sheet, performs calculations, and updates the sheet with computed results. Designed to simplify repetitive spreadsheet tasks.</p>
-          <p><b>Tech Stack:</b> Python, Google Sheets API</p>
-          <a href="#" target="_blank">GitHub Repo</a>
+          <p>Python tool to automate Google Sheet calculations and updates.</p>
+          <a href="#" target="_blank">GitHub</a>
         </div>
         <div class="card">
           <h3>Leo Downloader</h3>
-          <p>A YouTube video downloader application built with a user-friendly GUI, allowing users to download videos by simply entering the URL.</p>
-          <p><b>Tech Stack:</b> Python, PyQt5</p>
-          <a href="#" target="_blank">GitHub Repo</a>
+          <p>Simple YouTube video downloader with a clean GUI.</p>
+          <a href="#" target="_blank">GitHub</a>
         </div>
       </div>
     </section>
 
     <section class="section" id="experience">
-      <h2>Professional Experience</h2>
+      <h2>Experience</h2>
       <div class="cards">
         <div class="card">
-          <h3>IT Support Specialist | Nepal Medical College</h3>
-          <p><b>Aarubari, KTM | 2023 - 2024</b></p>
+          <h3>Nepal Medical College</h3>
+          <p>IT Support Specialist (2023-2024)</p>
           <ul>
-            <li>Managed and maintained a network of over 200 computers, ensuring operational uptime for critical medical college functions.</li>
-            <li>Troubleshot complex hardware, software, and network connectivity issues, minimizing downtime.</li>
-            <li>Implemented preventative maintenance schedules to proactively address potential system failures.</li>
-            <li><b>Achievement:</b> Received special recognition from the principal, Dr. Promod Kumar Chhetri, for exceptional contributions and performance as a Computer Operator.</li>
+            <li>Maintained 200+ computers, ensured uptime, solved complex issues.</li>
+            <li>Recognized for exceptional performance.</li>
           </ul>
         </div>
         <div class="card">
-          <h3>On-Site Technical Support | Sagar Computer</h3>
-          <p><b>Boudha, KTM | 2020 - 2023</b></p>
+          <h3>Sagar Computer</h3>
+          <p>On-Site Technical Support (2020-2023)</p>
           <ul>
-            <li>Provided comprehensive on-site technical support for hardware and software issues across a diverse client base.</li>
-            <li>Specialized in Windows OS troubleshooting, network problem resolution, and CCTV system maintenance.</li>
-            <li><b>Achievement:</b> Successfully led data recovery projects, including restoring critical data from a failed hard disk for the accounting section at Hotel Tibet International, saving the client significant time and resources.</li>
+            <li>Provided technical support, led data recovery projects.</li>
           </ul>
         </div>
       </div>
     </section>
 
     <section class="section" id="contact">
-      <h2>Get In Touch</h2>
+      <h2>Contact</h2>
       <div class="card" style="max-width:500px;margin:0 auto;text-align:center;">
-        <p>I'm currently seeking new opportunities and would love to hear from you. Whether you have a question or just want to connect, feel free to reach out!</p>
+        <p>Let's connect! I'm open to new opportunities and collaborations.</p>
         <a href="mailto:aayushadhikari786@gmail.com" class="btn">aayushadhikari786@gmail.com</a>
         <div style="margin:20px 0;">
           <a href="https://linkedin.com/in/your-linkedin" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" style="width:32px;height:32px;margin:0 8px;vertical-align:middle;"></a>
