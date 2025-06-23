@@ -7,136 +7,172 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
-  <header id="home" style="background: linear-gradient(120deg, #a18cd1 0%, #fbc2eb 100%);padding:0;">
-    <div class="hero-flex container">
-      <div class="hero-img-frame">
-        <img src="image.png" alt="Aayush" class="profile" />
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <img src="image.png" alt="Aayush Adhikari" class="sidebar-profile" />
+        <h2 class="sidebar-name">Aayush Adhikari</h2>
+        <p class="sidebar-title">Cloud & DevOps Engineer</p>
+        <p class="sidebar-special">AWS Certified | Automation Enthusiast</p>
+        <p class="sidebar-location"><span class="icon">📍</span> Kathmandu, Nepal</p>
+        <div class="sidebar-socials">
+          <a href="https://linkedin.com/in/aayushadhikari786" target="_blank"><span class="icon">in</span></a>
+          <a href="https://github.com/Aayush786-21" target="_blank"><span class="icon">gh</span></a>
+          <a href="mailto:aayushadhikari786@gmail.com" target="_blank"><span class="icon">✉️</span></a>
+          <a href="https://twitter.com/aayushadhikari7" target="_blank"><span class="icon">tw</span></a>
+        </div>
+        <a href="#contact" class="sidebar-btn">Let's Work Together!</a>
       </div>
-      <div class="hero-content">
-        <h1>Aayush Adhikari</h1>
-        <p class="hero-title">Cloud & DevOps Engineer</p>
-        <a href="#contact" class="btn">Contact Me</a>
-      </div>
-    </div>
-  </header>
+    </aside>
+    <main class="main-content">
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#about" class="nav-link">About Me</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta">Let's Talk</a>
+      </nav>
+      <section class="hero-section" id="home">
+        <div class="hero-content">
+          <h1>Hi, I'm Aayush</h1>
+          <h2>Cloud & DevOps Engineer</h2>
+          <p>Building scalable, automated, and secure cloud solutions. Let's create something amazing together.</p>
+          <div class="hero-actions">
+            <a href="#portfolio" class="hero-btn">My Works</a>
+            <a href="AayushAdhikari_CV.pdf" class="hero-btn hero-btn-outline" download>Download CV</a>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="about">
+        <h2>About Me</h2>
+        <div class="card" style="max-width:700px;margin:0 auto;">
+          <p>Cloud and DevOps engineer passionate about automation, scalable systems, and delivering reliable solutions. AWS Certified. I love building, optimizing, and securing cloud infrastructure.</p>
+        </div>
+      </section>
 
-  <main>
-    <section class="section" id="about">
-      <h2>About Me</h2>
-      <div class="card" style="max-width:700px;margin:0 auto;">
-        <p>Cloud and DevOps engineer passionate about automation, scalable systems, and delivering reliable solutions. AWS Certified. I love building, optimizing, and securing cloud infrastructure.</p>
-      </div>
-    </section>
+      <section class="section" id="skills">
+        <h2>Technical Skills</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Cloud & AWS</h3>
+            <div class="skill"><label>AWS Solutions Architect</label><div class="bar"><div style="width:95%"></div></div></div>
+            <div class="skill"><label>EC2, S3, IAM, VPC</label><div class="bar"><div style="width:90%"></div></div></div>
+          </div>
+          <div class="card">
+            <h3>DevOps & Automation</h3>
+            <div class="skill"><label>CI/CD, Jenkins, GitHub Actions</label><div class="bar"><div style="width:90%"></div></div></div>
+            <div class="skill"><label>Terraform, Ansible</label><div class="bar"><div style="width:85%"></div></div></div>
+          </div>
+          <div class="card">
+            <h3>Containers</h3>
+            <div class="skill"><label>Docker, Kubernetes</label><div class="bar"><div style="width:85%"></div></div></div>
+          </div>
+          <div class="card">
+            <h3>Core Tech</h3>
+            <div class="skill"><label>Python, Linux</label><div class="bar"><div style="width:90%"></div></div></div>
+            <div class="skill"><label>SQL, MongoDB</label><div class="bar"><div style="width:80%"></div></div></div>
+          </div>
+        </div>
+      </section>
 
-    <section class="section" id="skills">
-      <h2>Technical Skills</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Cloud & AWS</h3>
-          <div class="skill"><label>AWS Solutions Architect</label><div class="bar"><div style="width:95%"></div></div></div>
-          <div class="skill"><label>EC2, S3, IAM, VPC</label><div class="bar"><div style="width:90%"></div></div></div>
+      <section class="section" id="portfolio">
+        <h2>Projects</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Wanderlust</h3>
+            <p>MERN stack app with CI/CD, Docker, K8s, AWS. Highly available, scalable, and automated.</p>
+            <a href="https://github.com/Aayush786-21/mern-deployment" target="_blank">GitHub</a>
+          </div>
+          <div class="card">
+            <h3>Netflix-Clone</h3>
+            <p>Automated deployment for a Netflix-like app. CI/CD, Docker, K8s. (In Progress)</p>
+            <a href="https://github.com/Aayush786-21/netflix-clone" target="_blank">GitHub</a>
+          </div>
+          <div class="card">
+            <h3>Chatbot Deployment</h3>
+            <p>Automated chatbot deployment using modern DevOps tools. Reliable and scalable.</p>
+            <a href="https://github.com/Aayush786-21/chatbot-deployment" target="_blank">GitHub</a>
+          </div>
+          <div class="card">
+            <h3>QRDANCE</h3>
+            <p>QR-based attendance system for easy, secure check-ins.</p>
+            <a href="https://github.com/Aayush786-21/qrdance" target="_blank">GitHub</a>
+          </div>
+          <div class="card">
+            <h3>GoogleSheet Task Processor</h3>
+            <p>Python tool to automate Google Sheet calculations and updates.</p>
+            <a href="https://github.com/Aayush786-21/googlesheet-task-processor" target="_blank">GitHub</a>
+          </div>
+          <div class="card">
+            <h3>Leo Downloader</h3>
+            <p>Simple YouTube video downloader with a clean GUI.</p>
+            <a href="https://github.com/Aayush786-21/leo-downloader" target="_blank">GitHub</a>
+          </div>
         </div>
-        <div class="card">
-          <h3>DevOps & Automation</h3>
-          <div class="skill"><label>CI/CD, Jenkins, GitHub Actions</label><div class="bar"><div style="width:90%"></div></div></div>
-          <div class="skill"><label>Terraform, Ansible</label><div class="bar"><div style="width:85%"></div></div></div>
-        </div>
-        <div class="card">
-          <h3>Containers</h3>
-          <div class="skill"><label>Docker, Kubernetes</label><div class="bar"><div style="width:85%"></div></div></div>
-        </div>
-        <div class="card">
-          <h3>Core Tech</h3>
-          <div class="skill"><label>Python, Linux</label><div class="bar"><div style="width:90%"></div></div></div>
-          <div class="skill"><label>SQL, MongoDB</label><div class="bar"><div style="width:80%"></div></div></div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section" id="certifications">
-      <h2>Certifications</h2>
-      <div class="card" style="max-width:500px;margin:0 auto;text-align:center;">
-        <img src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Solutions-Architect-Associate_badge.634f8a21af2e0e95687587a7107F4f7461956e22.png" alt="AWS Certified Solutions Architect – Associate" style="width:100px;margin-bottom:10px;">
-        <h3 style="margin:10px 0 5px 0;">AWS Certified Solutions Architect – Associate</h3>
-        <p>Issued by AWS</p>
-        <a href="https://www.certmetrics.com/amazon/public/transcript.aspx?transcript=YOUR_ID" target="_blank" class="btn">Verify</a>
-      </div>
-    </section>
+      <section class="section" id="achievements">
+        <h2>Achievements & Certifications</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>AWS Certified Solutions Architect</h3>
+            <p>Cloud Architecture, AWS Services</p>
+            <a href="https://www.certmetrics.com/amazon/public/transcript.aspx?transcript=YOUR_ID" target="_blank">Verify</a>
+          </div>
+          <div class="card">
+            <h3>Python Automation Projects</h3>
+            <p>Automated workflows and deployments using Python and DevOps tools.</p>
+          </div>
+        </div>
+      </section>
 
-    <section class="section" id="projects">
-      <h2>Projects</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Wanderlust</h3>
-          <p>MERN stack app with CI/CD, Docker, K8s, AWS. Highly available, scalable, and automated.</p>
-          <a href="#" target="_blank">GitHub</a> 
+      <section class="section" id="experience">
+        <h2>Experience</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Nepal Medical College</h3>
+            <p>IT Support Specialist (2023-2024)</p>
+            <ul>
+              <li>Maintained 200+ computers, ensured uptime, solved complex issues.</li>
+              <li>Recognized for exceptional performance.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Sagar Computer</h3>
+            <p>On-Site Technical Support (2020-2023)</p>
+            <ul>
+              <li>Provided technical support, led data recovery projects.</li>
+            </ul>
+          </div>
         </div>
-        <div class="card">
-          <h3>Netflix-Clone</h3>
-          <p>Automated deployment for a Netflix-like app. CI/CD, Docker, K8s. (In Progress)</p>
-          <a href="#" target="_blank">GitHub</a>
-        </div>
-        <div class="card">
-          <h3>Chatbot Deployment</h3>
-          <p>Automated chatbot deployment using modern DevOps tools. Reliable and scalable.</p>
-          <a href="#" target="_blank">GitHub</a>
-        </div>
-        <div class="card">
-          <h3>QRDANCE</h3>
-          <p>QR-based attendance system for easy, secure check-ins.</p>
-          <a href="#" target="_blank">GitHub</a>
-        </div>
-        <div class="card">
-          <h3>GoogleSheet Task Processor</h3>
-          <p>Python tool to automate Google Sheet calculations and updates.</p>
-          <a href="#" target="_blank">GitHub</a>
-        </div>
-        <div class="card">
-          <h3>Leo Downloader</h3>
-          <p>Simple YouTube video downloader with a clean GUI.</p>
-          <a href="#" target="_blank">GitHub</a>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section" id="experience">
-      <h2>Experience</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Nepal Medical College</h3>
-          <p>IT Support Specialist (2023-2024)</p>
-          <ul>
-            <li>Maintained 200+ computers, ensured uptime, solved complex issues.</li>
-            <li>Recognized for exceptional performance.</li>
-          </ul>
+      <section class="section" id="contact">
+        <h2>Contact</h2>
+        <div class="card" style="max-width:500px;margin:0 auto;text-align:center;">
+          <p>Let's connect! I'm open to new opportunities and collaborations.</p>
+          <a href="mailto:aayushadhikari786@gmail.com" class="btn">aayushadhikari786@gmail.com</a>
+          <div style="margin:20px 0;">
+            <a href="https://linkedin.com/in/aayushadhikari786" target="_blank"><span class="icon">in</span></a>
+            <a href="https://github.com/Aayush786-21" target="_blank"><span class="icon">gh</span></a>
+            <a href="mailto:aayushadhikari786@gmail.com" target="_blank"><span class="icon">✉️</span></a>
+            <a href="https://twitter.com/aayushadhikari7" target="_blank"><span class="icon">tw</span></a>
+          </div>
+          <div style="color:#666;">Boudha-6, Ramhiti | +977-9849832727</div>
         </div>
-        <div class="card">
-          <h3>Sagar Computer</h3>
-          <p>On-Site Technical Support (2020-2023)</p>
-          <ul>
-            <li>Provided technical support, led data recovery projects.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <h2>Contact</h2>
-      <div class="card" style="max-width:500px;margin:0 auto;text-align:center;">
-        <p>Let's connect! I'm open to new opportunities and collaborations.</p>
-        <a href="mailto:aayushadhikari786@gmail.com" class="btn">aayushadhikari786@gmail.com</a>
-        <div style="margin:20px 0;">
-          <a href="https://linkedin.com/in/your-linkedin" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" style="width:32px;height:32px;margin:0 8px;vertical-align:middle;"></a>
-          <a href="https://github.com/your-github" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" style="width:32px;height:32px;margin:0 8px;vertical-align:middle;"></a>
-        </div>
-        <div style="color:#666;">Boudha-6, Ramhiti | +977-9849832727</div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
+  </div>
 
   <footer>
     <div>© 2024 Aayush Adhikari. Built with ❤️ and code.</div>
