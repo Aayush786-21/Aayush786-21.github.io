@@ -585,34 +585,137 @@ body {
 
 /* Certifications Section uses existing section, section-title, cards-grid, and card styles for consistency */
 
-/* Education Table Styles */
+/* Enhanced Education Table Styles */
 .edu-table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   font-size: 1.1rem;
   background: transparent;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 1rem 0;
 }
-.edu-table th, .edu-table td {
-  padding: 1rem 1.5rem;
+
+.edu-table th, 
+.edu-table td {
+  padding: 1.25rem 1.5rem;
   text-align: left;
   border-bottom: 1px solid #e5e7eb;
+  position: relative;
 }
+
 .edu-table th {
   background: var(--gradient-purple);
   color: #fff;
   font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.edu-table th:first-child {
   border-top-left-radius: 20px;
+}
+
+.edu-table th:last-child {
   border-top-right-radius: 20px;
 }
-.edu-table tr:last-child td {
+
+.edu-table tbody tr {
+  transition: all 0.2s ease-in-out;
+}
+
+.edu-table tbody tr:nth-child(even) {
+  background: rgba(139, 92, 246, 0.02);
+}
+
+.edu-table tbody tr:hover {
+  background: var(--purple-light);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.15);
+}
+
+.edu-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 20px;
+}
+
+.edu-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 20px;
+}
+
+.edu-table tbody tr:last-child td {
   border-bottom: none;
 }
-.edu-table tr:hover td {
-  background: var(--purple-light);
+
+.edu-table td {
+  font-weight: 500;
+  line-height: 1.6;
 }
-@media (max-width: 600px) {
-  .edu-table th, .edu-table td {
-    padding: 0.7rem 0.5rem;
+
+/* Add subtle left border accent for first column */
+.edu-table td:first-child {
+  border-left: 3px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.edu-table tbody tr:hover td:first-child {
+  border-left-color: var(--gradient-purple);
+}
+
+/* Improved responsive design */
+@media (max-width: 768px) {
+  .edu-table {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .edu-table th, 
+  .edu-table td {
+    padding: 1rem 0.75rem;
+  }
+  
+  .edu-table th {
     font-size: 0.95rem;
   }
+}
+
+@media (max-width: 600px) {
+  .edu-table {
+    font-size: 0.9rem;
+  }
+  
+  .edu-table th, 
+  .edu-table td {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .edu-table th {
+    font-size: 0.85rem;
+  }
+}
+
+/* Optional: Add loading animation */
+.edu-table.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.edu-table.loading::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
 }
