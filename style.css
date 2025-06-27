@@ -582,3 +582,5 @@ body {
   background: white;
   color: var(--primary);
 }
+
+/* Certifications Section uses existing section, section-title, cards-grid, and card styles for consistency */
