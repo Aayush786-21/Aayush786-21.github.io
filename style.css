@@ -584,3 +584,35 @@ body {
 }
 
 /* Certifications Section uses existing section, section-title, cards-grid, and card styles for consistency */
+
+/* Education Table Styles */
+.edu-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.1rem;
+  background: transparent;
+}
+.edu-table th, .edu-table td {
+  padding: 1rem 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+.edu-table th {
+  background: var(--gradient-purple);
+  color: #fff;
+  font-weight: 700;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.edu-table tr:last-child td {
+  border-bottom: none;
+}
+.edu-table tr:hover td {
+  background: var(--purple-light);
+}
+@media (max-width: 600px) {
+  .edu-table th, .edu-table td {
+    padding: 0.7rem 0.5rem;
+    font-size: 0.95rem;
+  }
+}
