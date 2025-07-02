@@ -548,6 +548,12 @@ body {
 .project-card {
   min-width: 340px;
   max-width: 420px;
+  width: 380px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
   padding: 2.5rem 2rem 2rem 2rem;
   box-sizing: border-box;
 }
@@ -804,6 +810,24 @@ body {
   width: 100%;
   overflow-x: auto;
   padding-bottom: 2rem;
+  scrollbar-color: #a5b4fc #f3f4f6;
+  scrollbar-width: thin;
+}
+
+.pipeline-container::-webkit-scrollbar {
+  height: 12px;
+  background: #f3f4f6;
+  border-radius: 8px;
+}
+
+.pipeline-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #a5b4fc 0%, #6366f1 100%);
+  border-radius: 8px;
+}
+
+.pipeline-container::-webkit-scrollbar-track {
+  background: #f3f4f6;
+  border-radius: 8px;
 }
 
 .pipeline {
@@ -886,6 +910,12 @@ body {
     top: 100%;
     right: auto;
     transform: translateX(-50%) translateY(-8px) rotate(90deg);
+  }
+  .project-card {
+    width: 95vw;
+    min-width: unset;
+    max-width: unset;
+    height: auto;
   }
 }
 
