@@ -751,3 +751,37 @@ body {
 .skill-list li:hover {
   background: #e0e7ff;
 }
+
+.skills-icons-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem 2rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.skill-icon-label {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: #f3f4f6;
+  border-radius: 999px;
+  padding: 0.4rem 1.1rem 0.4rem 0.6rem;
+  box-shadow: 0 1px 4px rgba(99,102,241,0.05);
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  transition: background 0.2s;
+}
+
+.skill-icon-label:hover {
+  background: #e0e7ff;
+}
+
+.skill-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  background: none;
+  border-radius: 6px;
+}
