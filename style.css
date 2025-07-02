@@ -785,3 +785,115 @@ body {
   background: none;
   border-radius: 6px;
 }
+
+.pipeline-container {
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 2rem;
+}
+
+.pipeline {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: flex-start;
+}
+
+.pipeline-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.pipeline-arrow {
+  width: 48px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pipeline-arrow::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: linear-gradient(90deg, #a5b4fc 0%, #6366f1 100%);
+  border-radius: 2px;
+  position: relative;
+}
+
+.pipeline-arrow::before {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 12px solid #6366f1;
+  transform: translateY(-50%) translateX(18px);
+}
+
+/* Remove arrow after last step */
+.pipeline-step:last-child .pipeline-arrow {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .pipeline {
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: stretch;
+  }
+  .pipeline-step {
+    flex-direction: row;
+    align-items: center;
+  }
+  .pipeline-arrow {
+    width: 24px;
+    height: 48px;
+  }
+  .pipeline-arrow::after {
+    width: 4px;
+    height: 40px;
+    background: linear-gradient(180deg, #a5b4fc 0%, #6366f1 100%);
+    margin: 0 auto;
+  }
+  .pipeline-arrow::before {
+    border-top: 12px solid #6366f1;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 0;
+    left: 50%;
+    top: 100%;
+    right: auto;
+    transform: translateX(-50%) translateY(-8px) rotate(90deg);
+  }
+}
+
+.project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin: 1rem 0 0.5rem 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.stack-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  background: none;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(99,102,241,0.05);
+  transition: transform 0.2s;
+}
+
+.stack-icon:hover {
+  transform: scale(1.12) rotate(-4deg);
+}
