@@ -546,8 +546,22 @@ body {
 
 /* Project hover effects */
 .project-card {
-  position: relative;
-  overflow: hidden;
+  min-width: 340px;
+  max-width: 420px;
+  padding: 2.5rem 2rem 2rem 2rem;
+  box-sizing: border-box;
+}
+
+.project-card h3 {
+  text-align: justify;
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
+}
+
+.project-card p {
+  text-align: justify;
+  font-size: 1.08rem;
+  margin-bottom: 1.2rem;
 }
 
 .project-overlay {
