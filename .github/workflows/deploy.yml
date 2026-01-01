@@ -1,0 +1,56 @@
+name: Deploy Static Website to EC2
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.EC2_SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Deploy to EC2
+        run: |
+          ssh ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
+            set -e
+
+            echo "Deploy started"
+
+            # Clone or update repo
+            if [ ! -d "$HOME/aayush-portfolio" ]; then
+              git clone https://github.com/${{ github.repository }}.git $HOME/aayush-portfolio
+            else
+              cd $HOME/aayush-portfolio
+              git pull origin main
+            fi
+
+            cd $HOME/aayush-portfolio
+
+            # Build Docker image
+            docker build -t ${{ secrets.APP_NAME }} .
+
+            # Stop & remove old container if exists
+            docker stop ${{ secrets.APP_NAME }} || true
+            docker rm ${{ secrets.APP_NAME }} || true
+
+            # Run new container
+            docker run -d \
+              --name ${{ secrets.APP_NAME }} \
+              -p 80:80 \
+              --restart unless-stopped \
+              ${{ secrets.APP_NAME }}
+
+            echo "Deploy finished"
+          EOF
+
