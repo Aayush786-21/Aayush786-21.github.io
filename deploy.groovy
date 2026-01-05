@@ -3,55 +3,57 @@ pipeline {
 
     environment {
         EC2_HOST = credentials('EC2_HOST')
-        EC2_USER = credentials('EC2_USER')
         APP_NAME = credentials('APP_NAME')
-        SSH_KEY64 = credentials('SSH_KEY64')
     }
-        // hi there
-    stages {
 
-        stage('Configure SSH') {
-            steps {
-                sh '''
-                mkdir -p ~/.ssh
-                echo "$SSH_KEY64" > ~/.ssh/id_rsa
-                chmod 600 ~/.ssh/id_rsa
-                ssh-keyscan -H $EC2_HOST >> ~/.ssh/known_hosts
-                '''
-            }
-        }
+    stages {
 
         stage('Deploy to EC2') {
             steps {
-                sh '''
-                ssh $EC2_USER@$EC2_HOST << 'EOF'
-                  set -e
+                withCredentials([
+                    sshUserPrivateKey(
+                        credentialsId: 'SSH_KEY64',
+                        keyFileVariable: 'SSH_KEY_FILE',
+                        usernameVariable: 'EC2_USER'
+                    )
+                ]) {
+                    sh '''
+                    echo "Starting deployment to $EC2_HOST"
 
-                  echo "Deploy started"
+                    ssh -i "$SSH_KEY_FILE" \
+                        -o StrictHostKeyChecking=no \
+                        $EC2_USER@$EC2_HOST << 'EOF'
 
-                  if [ ! -d "$HOME/aayush-portfolio" ]; then
-                    git clone https://github.com/aayushadhikari/aayush-portfolio.git $HOME/aayush-portfolio
-                  else
-                    cd $HOME/aayush-portfolio
-                    git pull origin main
-                  fi
+                      set -e
 
-                  cd $HOME/aayush-portfolio
+                      echo "Connected to EC2"
+                      echo "Deploy started"
 
-                  docker build -t $APP_NAME .
+                      if [ ! -d "$HOME/aayush-portfolio" ]; then
+                        git clone https://github.com/aayushadhikari/aayush-portfolio.git $HOME/aayush-portfolio
+                      else
+                        cd $HOME/aayush-portfolio
+                        git pull origin main
+                      fi
 
-                  docker stop $APP_NAME || true
-                  docker rm $APP_NAME || true
+                      cd $HOME/aayush-portfolio
 
-                  docker run -d \
-                    --name $APP_NAME \
-                    -p 80:80 \
-                    --restart unless-stopped \
-                    $APP_NAME
+                      docker build -t $APP_NAME .
 
-                  echo "Deploy finished"
-                EOF
-                '''
+                      docker stop $APP_NAME || true
+                      docker rm $APP_NAME || true
+
+                      docker run -d \
+                        --name $APP_NAME \
+                        -p 80:80 \
+                        --restart unless-stopped \
+                        $APP_NAME
+
+                      echo "Deploy finished successfully"
+
+                    EOF
+                    '''
+                }
             }
         }
     }
