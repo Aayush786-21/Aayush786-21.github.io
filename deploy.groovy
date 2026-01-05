@@ -14,7 +14,7 @@ pipeline {
             steps {
                 sh '''
                 mkdir -p ~/.ssh
-                echo "$SSH_KEY64" | base64 -d > ~/.ssh/id_rsa
+                echo "$SSH_KEY64" > ~/.ssh/id_rsa
                 chmod 600 ~/.ssh/id_rsa
                 ssh-keyscan -H $EC2_HOST >> ~/.ssh/known_hosts
                 '''
