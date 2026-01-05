@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     environment {
-        EC2_HOST = 'your.ec2.public.ip'
-        EC2_USER = 'ubuntu'
-        APP_NAME = 'aayush-portfolio'
+        EC2_HOST = credentials('EC2_HOST')
+        EC2_USER = credentials('EC2_USER')
+        APP_NAME = credntials('APP_NAME')
         SSH_KEY64 = credentials('SSH_KEY64')
     }
 
