@@ -4,7 +4,7 @@ pipeline {
     environment {
         EC2_HOST = credentials('EC2_HOST')
         EC2_USER = credentials('EC2_USER')
-        APP_NAME = credntials('APP_NAME')
+        APP_NAME = credentials('APP_NAME')
         SSH_KEY64 = credentials('SSH_KEY64')
     }
 
