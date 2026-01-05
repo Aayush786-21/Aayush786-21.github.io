@@ -7,7 +7,7 @@ pipeline {
         APP_NAME = credentials('APP_NAME')
         SSH_KEY64 = credentials('SSH_KEY64')
     }
-
+        // hi there
     stages {
 
         stage('Configure SSH') {
