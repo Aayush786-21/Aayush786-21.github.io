@@ -21,38 +21,40 @@ pipeline {
 
                     ssh -i "$SSH_KEY_FILE" \
                         -o StrictHostKeyChecking=no \
-                        $EC2_USER@$EC2_HOST << EOF
+                        $EC2_USER@$EC2_HOST << 'EOF'
 
                       set -e
 
-                      # ---- App configuration (MUST exist on EC2 shell) ----
+                      # ---- EC2-local config ----
                       APP_NAME="aayush-portfolio"
-                      export APP_NAME
+                      APP_DIR="/home/ubuntu/Aayush786-21.github.io"
+                      REPO_URL="https://github.com/Aayush786-21/Aayush786-21.github.io.git"
 
                       echo "Connected to EC2"
-                      echo "Deploying app: $APP_NAME"
+                      echo "Deploying $APP_NAME"
+                      echo "App directory: $APP_DIR"
 
                       # ---- Fetch code ----
-                      if [ ! -d "$HOME/aayush-portfolio" ]; then
-                        git clone https://github.com/aayushadhikari/aayush-portfolio.git $HOME/aayush-portfolio
+                      if [ ! -d "$APP_DIR" ]; then
+                        git clone "$REPO_URL" "$APP_DIR"
                       else
-                        cd $HOME/aayush-portfolio
+                        cd "$APP_DIR"
                         git pull origin main
                       fi
 
-                      cd $HOME/aayush-portfolio
+                      cd "$APP_DIR"
 
                       # ---- Docker build & run ----
-                      docker build -t $APP_NAME .
+                      docker build -t "$APP_NAME" .
 
-                      docker stop $APP_NAME || true
-                      docker rm $APP_NAME || true
+                      docker stop "$APP_NAME" || true
+                      docker rm "$APP_NAME" || true
 
                       docker run -d \
-                        --name $APP_NAME \
+                        --name "$APP_NAME" \
                         -p 80:80 \
                         --restart unless-stopped \
-                        $APP_NAME
+                        "$APP_NAME"
 
                       echo "Deploy finished successfully"
 
