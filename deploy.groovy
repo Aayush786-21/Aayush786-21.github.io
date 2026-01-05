@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         EC2_HOST = credentials('EC2_HOST')
-        APP_NAME = credentials('APP_NAME')
+        APP_NAME = ('aayush-portfolio')
     }
 
     stages {
