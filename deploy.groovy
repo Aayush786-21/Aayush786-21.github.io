@@ -3,7 +3,6 @@ pipeline {
 
     environment {
         EC2_HOST = credentials('EC2_HOST')
-        APP_NAME = ('aayush-portfolio')
     }
 
     stages {
@@ -22,13 +21,18 @@ pipeline {
 
                     ssh -i "$SSH_KEY_FILE" \
                         -o StrictHostKeyChecking=no \
-                        $EC2_USER@$EC2_HOST << 'EOF'
+                        $EC2_USER@$EC2_HOST << EOF
 
                       set -e
 
-                      echo "Connected to EC2"
-                      echo "Deploy started"
+                      # ---- App configuration (MUST exist on EC2 shell) ----
+                      APP_NAME="aayush-portfolio"
+                      export APP_NAME
 
+                      echo "Connected to EC2"
+                      echo "Deploying app: $APP_NAME"
+
+                      # ---- Fetch code ----
                       if [ ! -d "$HOME/aayush-portfolio" ]; then
                         git clone https://github.com/aayushadhikari/aayush-portfolio.git $HOME/aayush-portfolio
                       else
@@ -38,6 +42,7 @@ pipeline {
 
                       cd $HOME/aayush-portfolio
 
+                      # ---- Docker build & run ----
                       docker build -t $APP_NAME .
 
                       docker stop $APP_NAME || true
@@ -51,7 +56,7 @@ pipeline {
 
                       echo "Deploy finished successfully"
 
-                    EOF
+EOF
                     '''
                 }
             }
