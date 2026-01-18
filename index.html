@@ -60,10 +60,13 @@
       </div>
       <div class="about-text fade-in">
         <div class="card">
-          <h3>Cloud & DevOps Engineer</h3>
-            <p>
-              System Engineer and DevOps Engineer with strong hands-on experience in cloud infrastructure, CI/CD automation, containerization, and monitoring. Proven ability to design, deploy, and manage scalable and secure systems in AWS environments. Comfortable owning infrastructure end-to-end, automating repetitive operations, and supporting production workloads with high reliability.
-            </p>
+          <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; background: var(--gradient-purple); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Cloud & DevOps Engineer</h3>
+            <div class="profile-description">
+
+              <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-dark); margin-bottom: 1.5rem;">
+                Proven ability to design, deploy, and manage <strong>scalable and secure systems</strong> in AWS environments. Comfortable <strong>owning infrastructure end-to-end</strong>, automating repetitive operations, and supporting production workloads with <strong>high reliability</strong>.
+              </p>
+            </div>
 
           <div class="social-links">
             <a href="https://linkedin.com/in/aayush-adhikari-2281082b8" class="social-link" target="_blank" title="LinkedIn" aria-label="LinkedIn">
@@ -90,11 +93,10 @@
   <!-- Skills Section -->
   <section id="skills" class="section">
     <h2 class="section-title fade-in">Skills</h2>
-    <div class="cards-grid">
-      <!-- Cloud Box -->
-      <div class="card fade-in skill-group">
-        <h3>Cloud</h3>
-        <div class="skills-icons-grid">
+    <div class="skills-unified-container">
+      <div class="card fade-in skill-group-unified">
+        <div class="skills-icons-grid-unified">
+          <!-- Cloud -->
           <div class="skill-icon-label">
             <img src="icons/ec2.png" alt="EC2" class="skill-logo">
             <span>EC2</span>
@@ -120,15 +122,10 @@
             <span>EKS</span>
           </div>
           <div class="skill-icon-label">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="RDS" class="skill-logo">
+            <img src="https://d1.awsstatic.com/logos/aws-rds-logo.8a2faa11e120163f4ee60b4a98b9d6c48e5fd5f1.png" alt="RDS" class="skill-logo">
             <span>RDS</span>
           </div>
-        </div>
-      </div>
-      <!-- DevOps Box -->
-      <div class="card fade-in skill-group">
-        <h3>DevOps</h3>
-        <div class="skills-icons-grid">
+          <!-- DevOps -->
           <div class="skill-icon-label">
             <img src="icons/cicd.png" alt="CI/CD" class="skill-logo">
             <span>CI/CD</span>
@@ -142,7 +139,7 @@
             <span>GitHub Actions</span>
           </div>
           <div class="skill-icon-label">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS CodePipeline" class="skill-logo">
+            <img src="https://d1.awsstatic.com/logos/aws-codepipeline-logo.5c2c6e75e33ef93c0a7a8de32ceebadf1d189762.png" alt="AWS CodePipeline" class="skill-logo">
             <span>AWS CodePipeline</span>
           </div>
           <div class="skill-icon-label">
@@ -169,12 +166,7 @@
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" alt="Grafana" class="skill-logo">
             <span>Grafana</span>
           </div>
-        </div>
-      </div>
-      <!-- Core Technologies Box -->
-      <div class="card fade-in skill-group">
-        <h3>Core Technologies</h3>
-        <div class="skills-icons-grid">
+          <!-- Core Technologies -->
           <div class="skill-icon-label">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="skill-logo">
             <span>Python</span>
@@ -191,12 +183,7 @@
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="skill-logo">
             <span>GitHub</span>
           </div>
-        </div>
-      </div>
-      <!-- Databases Box -->
-      <div class="card fade-in skill-group">
-        <h3>Databases</h3>
-        <div class="skills-icons-grid">
+          <!-- Databases -->
           <div class="skill-icon-label">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="skill-logo">
             <span>MongoDB</span>
@@ -216,141 +203,136 @@
 
   <!-- Projects Section -->
   <section id="projects" class="section">
-    <h2 class="section-title fade-in">Featured Pipeline Of Projects That I Have Done So Far</h2>
-    <div class="pipeline-container">
-      <div class="pipeline">
-        <div class="pipeline-step">
-          <div class="card fade-in project-card">
-            <h3>💰 TERRA-BUD</h3>
-            <p>Terraform cost estimation web application. Built a no-login cost estimation platform for Terraform infrastructure with automatic resource parsing, monthly cost estimation using cached pricing from AWS, Azure, and GCP, and AI-driven optimization insights.</p>
-            <div class="project-stack">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" class="stack-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" title="FastAPI" class="stack-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform" title="Terraform" class="stack-icon">
-            </div>
-            <div class="project-overlay">
-              <a href="https://github.com/Aayush786-21/terraform_cost_estimation" class="project-link" target="_blank">View Project</a>
-            </div>
+    <h2 class="section-title fade-in">Featured Projects</h2>
+    <div class="projects-grid-new">
+      <div class="project-item fade-in">
+        <div class="card project-card-new">
+          <h3>💰 TERRA-BUD</h3>
+          <p>Terraform cost estimation web application. Built a no-login cost estimation platform for Terraform infrastructure with automatic resource parsing, monthly cost estimation using cached pricing from AWS, Azure, and GCP, and AI-driven optimization insights.</p>
+          <div class="project-stack">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" class="stack-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" title="FastAPI" class="stack-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform" title="Terraform" class="stack-icon">
           </div>
-          <div class="pipeline-arrow"></div>
+          <div class="project-overlay">
+            <a href="https://github.com/Aayush786-21/terraform_cost_estimation" class="project-link" target="_blank">View Project</a>
+          </div>
         </div>
-        <div class="pipeline-step">
-          <div class="card fade-in project-card">
-            <h3>♾️ DevOps Butler</h3>
-            <p>A vercel-like web application where users deploy projects by granting repository access. Features automated build and deployment using Docker, handling end-to-end deployment without manual intervention. Tech Stack: Python, Flask, Docker, Gemini 2.9.</p>
-            <div class="project-stack">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" class="stack-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker" class="stack-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" title="Kubernetes" class="stack-icon">
-              <img src="icons/ai.png" alt="AI" title="AI-powered" class="stack-icon">
-            </div>
-            <div class="project-overlay">
-              <a href="https://github.com/Aayush786-21/DevOps-Butler" class="project-link" target="_blank">View Project</a>
-            </div>
+      </div>
+      
+      <div class="project-item fade-in">
+        <div class="card project-card-new">
+          <h3>♾️ DevOps Butler</h3>
+          <p>A vercel-like web application where users deploy projects by granting repository access. Features automated build and deployment using Docker, handling end-to-end deployment without manual intervention. Tech Stack: Python, Flask, Docker, Gemini 2.9.</p>
+          <div class="project-stack">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" class="stack-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker" class="stack-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" title="Kubernetes" class="stack-icon">
+            <img src="icons/ai.png" alt="AI" title="AI-powered" class="stack-icon">
           </div>
-          <div class="pipeline-arrow"></div>
+          <div class="project-overlay">
+            <a href="https://github.com/Aayush786-21/DevOps-Butler" class="project-link" target="_blank">View Project</a>
+          </div>
         </div>
-        <div class="pipeline-step">
-          <div class="card fade-in project-card">
-            <h3>🌟 Wanderlust</h3>
-            <p>Full-stack MERN application with comprehensive CI/CD pipeline, Docker containerization, Kubernetes orchestration, and AWS deployment. Highly available, scalable, and fully automated.</p>
-            <div class="project-stack">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" title="Jenkins" class="stack-icon">
-              <img src="icons/github actions.png" alt="GitHub Actions" title="GitHub Actions" class="stack-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker" class="stack-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" title="Kubernetes" class="stack-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform" title="Terraform" class="stack-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="NGINX" title="NGINX" class="stack-icon">
-              <img src="icons/ec2.png" alt="AWS EC2" title="AWS EC2" class="stack-icon"><!-- Use your local EC2 icon -->
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" alt="Prometheus" title="Prometheus" class="stack-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" alt="Grafana" title="Grafana" class="stack-icon">
-            </div>
-            <div class="project-overlay">
-              <a href="https://github.com/Aayush786-21/mern-deployment" class="project-link" target="_blank">View Project</a>
-            </div>
+      </div>
+      
+      <div class="project-item fade-in">
+        <div class="card project-card-new">
+          <h3>🌟 Wanderlust</h3>
+          <p>Full-stack MERN application with comprehensive CI/CD pipeline, Docker containerization, Kubernetes orchestration, and AWS deployment. Highly available, scalable, and fully automated.</p>
+          <div class="project-stack">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" title="Jenkins" class="stack-icon">
+            <img src="icons/github actions.png" alt="GitHub Actions" title="GitHub Actions" class="stack-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker" class="stack-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" title="Kubernetes" class="stack-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform" title="Terraform" class="stack-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="NGINX" title="NGINX" class="stack-icon">
+            <img src="icons/ec2.png" alt="AWS EC2" title="AWS EC2" class="stack-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" alt="Prometheus" title="Prometheus" class="stack-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" alt="Grafana" title="Grafana" class="stack-icon">
           </div>
-          <div class="pipeline-arrow"></div>
+          <div class="project-overlay">
+            <a href="https://github.com/Aayush786-21/mern-deployment" class="project-link" target="_blank">View Project</a>
+          </div>
         </div>
-        <div class="pipeline-step">
-          <div class="card fade-in project-card">
-            <h3>🎬 Netflix Clone</h3>
-            <p>Deployed a Netflix clone using a robust CI/CD pipeline. Automated builds and deployments using Jenkins, containerized with Docker, orchestrated with Kubernetes, and deployed on AWS EKS for high availability and scalability.</p>
-            <div class="project-stack">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" title="Jenkins" class="stack-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker" class="stack-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" title="Kubernetes" class="stack-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="NGINX" title="NGINX" class="stack-icon">
-              <img src="icons/eks.png" alt="AWS EKS" title="AWS EKS" class="stack-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" alt="Prometheus" title="Prometheus" class="stack-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" alt="Grafana" title="Grafana" class="stack-icon">
-            </div>
-            <div class="project-overlay">
-              <a href="https://github.com/Aayush786-21/netflix-" class="project-link" target="_blank">View Project</a>
-            </div>
+      </div>
+      
+      <div class="project-item fade-in">
+        <div class="card project-card-new">
+          <h3>🎬 Netflix Clone</h3>
+          <p>Deployed a Netflix clone using a robust CI/CD pipeline. Automated builds and deployments using Jenkins, containerized with Docker, orchestrated with Kubernetes, and deployed on AWS EKS for high availability and scalability.</p>
+          <div class="project-stack">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" title="Jenkins" class="stack-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker" class="stack-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" title="Kubernetes" class="stack-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="NGINX" title="NGINX" class="stack-icon">
+            <img src="icons/eks.png" alt="AWS EKS" title="AWS EKS" class="stack-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" alt="Prometheus" title="Prometheus" class="stack-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" alt="Grafana" title="Grafana" class="stack-icon">
           </div>
-          <div class="pipeline-arrow"></div>
+          <div class="project-overlay">
+            <a href="https://github.com/Aayush786-21/netflix-" class="project-link" target="_blank">View Project</a>
+          </div>
         </div>
-        <div class="pipeline-step">
-          <div class="card fade-in project-card">
-            <h3>🤖 Chatbot Deployment</h3>
-            <p>CI/CD-focused deployment project for a chatbot application. Automated build, test, and deployment using Jenkins, containerized with Docker, and orchestrated containers using Kubernetes.</p>
-            <div class="project-stack">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" title="Jenkins" class="stack-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker" class="stack-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" title="Kubernetes" class="stack-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform" title="Terraform" class="stack-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="NGINX" title="NGINX" class="stack-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" alt="Prometheus" title="Prometheus" class="stack-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" alt="Grafana" title="Grafana" class="stack-icon">
-            </div>
-            <div class="project-overlay">
-              <a href="https://github.com/Aayush786-21/chatbot-deploy" class="project-link" target="_blank">View Project</a>
-            </div>
+      </div>
+      
+      <div class="project-item fade-in">
+        <div class="card project-card-new">
+          <h3>🤖 Chatbot Deployment</h3>
+          <p>CI/CD-focused deployment project for a chatbot application. Automated build, test, and deployment using Jenkins, containerized with Docker, and orchestrated containers using Kubernetes.</p>
+          <div class="project-stack">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" title="Jenkins" class="stack-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker" class="stack-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" title="Kubernetes" class="stack-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform" title="Terraform" class="stack-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="NGINX" title="NGINX" class="stack-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" alt="Prometheus" title="Prometheus" class="stack-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" alt="Grafana" title="Grafana" class="stack-icon">
           </div>
-          <div class="pipeline-arrow"></div>
+          <div class="project-overlay">
+            <a href="https://github.com/Aayush786-21/chatbot-deploy" class="project-link" target="_blank">View Project</a>
+          </div>
         </div>
-        <div class="pipeline-step">
-          <div class="card fade-in project-card">
-            <h3>📱 QRDANCE</h3>
-            <p>QR code-based attendance management system providing easy, secure, and efficient check-in solutions for events and organizations.</p>
-            <div class="project-stack">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" class="stack-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" title="Flask" class="stack-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" title="SQLite" class="stack-icon">
-            </div>
-            <div class="project-overlay">
-              <a href="https://github.com/Aayush786-21/damn_project" class="project-link" target="_blank">View Project</a>
-            </div>
+      </div>
+      
+      <div class="project-item fade-in">
+        <div class="card project-card-new">
+          <h3>📱 QRDANCE</h3>
+          <p>QR code-based attendance management system providing easy, secure, and efficient check-in solutions for events and organizations.</p>
+          <div class="project-stack">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" class="stack-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" title="Flask" class="stack-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" title="SQLite" class="stack-icon">
           </div>
-          <div class="pipeline-arrow"></div>
+          <div class="project-overlay">
+            <a href="https://github.com/Aayush786-21/damn_project" class="project-link" target="_blank">View Project</a>
+          </div>
         </div>
-        <div class="pipeline-step">
-          <div class="card fade-in project-card">
-            <h3>📊 Google Sheets Processor</h3>
-            <p>Python automation tool for Google Sheets that streamlines calculations, updates, and data processing workflows.</p>
-            <div class="project-stack">
-              <!-- Google Sheets icon not available in devicon, add if you have a local one -->
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" class="stack-icon">
-            </div>
-            <div class="project-overlay">
-              <a href="https://github.com/Aayush786-21/spreadsheet_connectivity" class="project-link" target="_blank">View Project</a>
-            </div>
+      </div>
+      
+      <div class="project-item fade-in">
+        <div class="card project-card-new">
+          <h3>📊 Google Sheets Processor</h3>
+          <p>Python automation tool for Google Sheets that streamlines calculations, updates, and data processing workflows.</p>
+          <div class="project-stack">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" class="stack-icon">
           </div>
-          <div class="pipeline-arrow"></div>
+          <div class="project-overlay">
+            <a href="https://github.com/Aayush786-21/spreadsheet_connectivity" class="project-link" target="_blank">View Project</a>
+          </div>
         </div>
-        <div class="pipeline-step">
-          <div class="card fade-in project-card">
-            <h3>⬇️ Leo Downloader</h3>
-            <p>User-friendly YouTube video downloader with clean GUI and multiple format support for seamless media downloading experience.</p>
-            <div class="project-stack">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" class="stack-icon">
-              <!-- PyQt5 icon not available in devicon, add if you have a local one -->
-            </div>
-            <div class="project-overlay">
-              <a href="https://github.com/Aayush786-21/leo_downloader" class="project-link" target="_blank">View Project</a>
-            </div>
+      </div>
+      
+      <div class="project-item fade-in">
+        <div class="card project-card-new">
+          <h3>⬇️ Leo Downloader</h3>
+          <p>User-friendly YouTube video downloader with clean GUI and multiple format support for seamless media downloading experience.</p>
+          <div class="project-stack">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" class="stack-icon">
           </div>
-          <div class="pipeline-arrow"></div>
+          <div class="project-overlay">
+            <a href="https://github.com/Aayush786-21/leo_downloader" class="project-link" target="_blank">View Project</a>
+          </div>
         </div>
       </div>
     </div>
@@ -403,11 +385,17 @@
   <!-- Experience Section -->
   <section id="experience" class="section">
     <h2 class="section-title fade-in">Professional Experience</h2>
-    <div class="cards-grid">
-      <div class="card fade-in">
-        <h3>💼 Tekbay Academy</h3>
-        <p><strong>DevOps Apprenticeship</strong> • Nov 2025 - Present • Ekantakuna, Lalitpur</p>
-        <ul style="margin-top: 1rem; padding-left: 1.5rem; color: var(--text-light);">
+    <div class="experience-grid">
+      <div class="card fade-in experience-card">
+        <div class="experience-header">
+          <h3>💼 Tekbay Academy</h3>
+          <div class="experience-meta">
+            <span class="experience-role">DevOps Apprenticeship</span>
+            <span class="experience-period">Nov 2025 - Present</span>
+            <span class="experience-location">Ekantakuna, Lalitpur</span>
+          </div>
+        </div>
+        <ul class="experience-list">
           <li>Enrolled in an intensive Cloud/DevOps apprenticeship program</li>
           <li>Completed hands-on AWS labs and real-world DevOps projects</li>
           <li>Gained practical experience with core DevOps tools and workflows</li>
@@ -416,10 +404,16 @@
         </ul>
       </div>
 
-      <div class="card fade-in">
-        <h3>💼 SB Global Venture</h3>
-        <p><strong>Part-time Cloud Engineer</strong> • Nov 2025 - Present • Thamel, Ktm</p>
-        <ul style="margin-top: 1rem; padding-left: 1.5rem; color: var(--text-light);">
+      <div class="card fade-in experience-card">
+        <div class="experience-header">
+          <h3>💼 SB Global Venture</h3>
+          <div class="experience-meta">
+            <span class="experience-role">Part-time Cloud Engineer</span>
+            <span class="experience-period">Nov 2025 - Present</span>
+            <span class="experience-location">Thamel, Ktm</span>
+          </div>
+        </div>
+        <ul class="experience-list">
           <li>Managed multiple projects with varying infrastructure requirements</li>
           <li>Designed and implemented scalable cloud architectures</li>
           <li>Built and maintained CI/CD workflows for automated delivery</li>
@@ -431,10 +425,16 @@
         </ul>
       </div>
 
-      <div class="card fade-in">
-        <h3>💼 SaharaMind</h3>
-        <p><strong>DevOps Engineer</strong> • Aug 2025 - Present • Boudha, Ktm</p>
-        <ul style="margin-top: 1rem; padding-left: 1.5rem; color: var(--text-light);">
+      <div class="card fade-in experience-card">
+        <div class="experience-header">
+          <h3>💼 SaharaMind</h3>
+          <div class="experience-meta">
+            <span class="experience-role">DevOps Engineer</span>
+            <span class="experience-period">Aug 2025 - Present</span>
+            <span class="experience-location">Boudha, Ktm</span>
+          </div>
+        </div>
+        <ul class="experience-list">
           <li>Sole DevOps Engineer managing end-to-end infrastructure</li>
           <li>Designed and deployed HIPAA-compliant AWS infrastructure</li>
           <li>Supported development environments on AWS EC2</li>
@@ -447,10 +447,34 @@
         </ul>
       </div>
 
-      <div class="card fade-in">
-        <h3>💼 Mindrisers Tech</h3>
-        <p><strong>DevOps Engineer Intern</strong> • Feb 2024 - Aug 2025 • Putalisadak, Ktm</p>
-        <ul style="margin-top: 1rem; padding-left: 1.5rem; color: var(--text-light);">
+      <div class="card fade-in experience-card">
+        <div class="experience-header">
+          <h3>🏢 Adex International</h3>
+          <div class="experience-meta">
+            <span class="experience-role">AWS Apprenticeship</span>
+            <span class="experience-period">Nov 2024 - Feb 2025</span>
+            <span class="experience-location">Ekantakuna, Lalitpur</span>
+          </div>
+        </div>
+        <ul class="experience-list">
+          <li>Completed hands-on AWS apprenticeship focused on cloud infrastructure</li>
+          <li>Worked extensively with EC2, S3, IAM, VPC, and CloudFormation</li>
+          <li>Designed cloud architectures following security and scalability best practices</li>
+          <li>Optimized infrastructure for cost and performance</li>
+          <li>Earned AWS Certified Solutions Architect – Associate (SAA)</li>
+        </ul>
+      </div>
+
+      <div class="card fade-in experience-card">
+        <div class="experience-header">
+          <h3>💼 Mindrisers Tech</h3>
+          <div class="experience-meta">
+            <span class="experience-role">DevOps Engineer Intern</span>
+            <span class="experience-period">Feb 2024 - Aug 2025</span>
+            <span class="experience-location">Putalisadak, Ktm</span>
+          </div>
+        </div>
+        <ul class="experience-list">
           <li>Collaborated with senior DevOps engineers on production-grade deployments</li>
           <li>Independently managed deployment of the NEPX project</li>
           <li>Containerized applications using Docker</li>
@@ -462,10 +486,16 @@
         </ul>
       </div>
 
-      <div class="card fade-in">
-        <h3>💼 Nepal Medical College</h3>
-        <p><strong>Audio Visual – IT Support</strong> • Oct 2023 - Jul 2024 • Aarubari, Kathmandu</p>
-        <ul style="margin-top: 1rem; padding-left: 1.5rem; color: var(--text-light);">
+      <div class="card fade-in experience-card">
+        <div class="experience-header">
+          <h3>💼 Nepal Medical College</h3>
+          <div class="experience-meta">
+            <span class="experience-role">Audio Visual – IT Support</span>
+            <span class="experience-period">Oct 2023 - Jul 2024</span>
+            <span class="experience-location">Aarubari, Kathmandu</span>
+          </div>
+        </div>
+        <ul class="experience-list">
           <li>Managed and maintained 20+ systems with 99% uptime</li>
           <li>Troubleshot hardware, software, and network issues</li>
           <li>Ensured uninterrupted IT operations for medical staff and students</li>
@@ -473,26 +503,20 @@
         </ul>
       </div>
 
-      <div class="card fade-in">
-        <h3>💻 Sagar Computer</h3>
-        <p><strong>Computer Technician</strong> • Aug 2020 - Sep 2023 • Boudha, Kathmandu</p>
-        <ul style="margin-top: 1rem; padding-left: 1.5rem; color: var(--text-light);">
+      <div class="card fade-in experience-card">
+        <div class="experience-header">
+          <h3>💻 Sagar Computer</h3>
+          <div class="experience-meta">
+            <span class="experience-role">Computer Technician</span>
+            <span class="experience-period">Aug 2020 - Sep 2023</span>
+            <span class="experience-location">Boudha, Kathmandu</span>
+          </div>
+        </div>
+        <ul class="experience-list">
           <li>Provided on-site technical support for hardware and software issues</li>
           <li>Performed OS troubleshooting and system maintenance</li>
           <li>Resolved network configuration and connectivity problems</li>
           <li>Conducted data recovery for various client environments</li>
-        </ul>
-      </div>
-
-      <div class="card fade-in">
-        <h3>🏢 Adex International</h3>
-        <p><strong>AWS Apprenticeship</strong> • Nov 2024 - Feb 2025 • Ekantakuna, Lalitpur</p>
-        <ul style="margin-top: 1rem; padding-left: 1.5rem; color: var(--text-light);">
-          <li>Completed hands-on AWS apprenticeship focused on cloud infrastructure</li>
-          <li>Worked extensively with EC2, S3, IAM, VPC, and CloudFormation</li>
-          <li>Designed cloud architectures following security and scalability best practices</li>
-          <li>Optimized infrastructure for cost and performance</li>
-          <li>Earned AWS Certified Solutions Architect – Associate (SAA)</li>
         </ul>
       </div>
     </div>
