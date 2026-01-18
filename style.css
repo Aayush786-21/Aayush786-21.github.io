@@ -982,7 +982,7 @@ body {
   min-height: 380px;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow: visible;
   transition: all 0.4s ease;
 }
 
@@ -1008,6 +1008,32 @@ body {
   margin-bottom: 1rem;
 }
 
+.live-site-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--gradient-purple);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.3);
+  font-size: 0.85rem;
+  position: relative;
+  z-index: 10;
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.live-site-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+  background: linear-gradient(135deg, #4f46e5 0%, #5b21b6 100%);
+  z-index: 11;
+}
+
 /* Keep existing overlay styles for project-card-new */
 .project-card-new .project-overlay {
   position: absolute;
@@ -1022,10 +1048,39 @@ body {
   opacity: 0;
   transition: all 0.3s ease;
   border-radius: 20px;
+  z-index: 5;
+  pointer-events: none;
 }
 
 .project-card-new:hover .project-overlay {
   opacity: 1;
+  pointer-events: auto;
+}
+
+.project-card-new .project-live-badge {
+  pointer-events: auto;
+}
+
+.project-card-new:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.project-link-secondary {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.project-link-secondary:hover {
+  background: white;
+  color: var(--primary);
 }
 
 @media (max-width: 768px) {
